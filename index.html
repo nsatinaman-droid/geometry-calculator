@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Geometry Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="bg"></div>
+
+<div class="container">
+    <div class="top-bar">
+        <h1>✨ Geometry Pro</h1>
+        <button onclick="toggleTheme()">🌙</button>
+    </div>
+
+    <p class="subtitle">Circle Area & Sphere Volume</p>
+
+    <input type="number" id="radius" placeholder="Enter radius..." oninput="calculate()" />
+
+    <div class="result">
+        <div class="card">
+            <h3>Circle Area</h3>
+            <p id="area">--</p>
+        </div>
+
+        <div class="card">
+            <h3>Sphere Volume</h3>
+            <p id="volume">--</p>
+        </div>
+    </div>
+
+    <div class="formula">
+        <p>Area = πr²</p>
+        <p>Volume = 4/3 πr³</p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
